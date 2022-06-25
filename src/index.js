@@ -7,7 +7,7 @@ const app = express();
 
 // Settings
 
-app.set('port', process.env.PORT || 5500);
+app.set('port', process.env.PORT || 3000);
 app.set('json spaces', 2);
 
 // Server
@@ -24,5 +24,6 @@ app.use(express.json());
 
 // Routes
 
+app.use('/api/movies',require('./routes/movies'));
 app.use(require('./routes/index'));
 
