@@ -25,7 +25,7 @@ router.post('/',(req,res)=>{
     res.send('received');
 });
 
-// Router put, nos permite actualizar los datos del objeto ya definido
+// Router put, nos permite actualizar los datos del objeto ya definido mezcla lógica del método post y delete buscando un id dentro del json, confirmando que los datos a cambiar y cambiando los datos en cuestión dentro del objeto.
 
 router.put('/:id', (req,res) =>{
     const {id} = req.params;
